@@ -72,7 +72,7 @@ plot4 <- function(file) {
   legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
          lty = 1, col = c("#000000", "#FF0000", "#0000FF"), bg = "transparent", border = "transparent")
   
-  #4
+  #4 wild guess here. I guess it is not the task to reverse engineer the reference plot.
   plot(power_consumption$datetime, 
        power_consumption$Global_reactive_power, 
        type = "n", xlab="datetime", ylab = "Global_reactive_power")
