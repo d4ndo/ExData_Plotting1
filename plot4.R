@@ -75,7 +75,11 @@ plot4 <- function(file) {
   #4
   plot(power_consumption$datetime, 
        power_consumption$Global_reactive_power, 
-       type = "l", xlab="datetime", ylab = "Global_reactive_power")
+       type = "n", xlab="datetime", ylab = "Global_reactive_power")
+  points(power_consumption$datetime, 
+        power_consumption$Global_reactive_power, pch=20, cex=0.05)
+  lines(power_consumption$datetime, 
+        power_consumption$Global_reactive_power, col="#000000AA")
   
   dev.off()
   print("done")
