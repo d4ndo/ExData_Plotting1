@@ -93,7 +93,7 @@ getDataSet <- function() {
   library(utils)
   
   download.file("http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", 
-                paste0(getwd(), "/", "household_power_consumption.zip"))
+                "household_power_consumption.zip")
   hashdigest <- md5sum("household_power_consumption.zip")
   
   stopifnot(identical(as.character(hashdigest), "41f51806846b6b567b8ae701a300a3de"))
