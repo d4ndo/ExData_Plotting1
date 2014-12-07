@@ -70,7 +70,7 @@ plot4 <- function(file) {
   lines(power_consumption$datetime, power_consumption$Sub_metering_3, col="blue")
   
   legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-         lty = 1, col = c("#000000", "#FF0000", "#0000FF"), bg = "transparent", border = "transparent")
+         lty = 1, col = c("#000000", "#FF0000", "#0000FF"), bg = "transparent", bty = "n")
   
   #4 wild guess here. I guess it is not the task to reverse engineer the reference plot.
   plot(power_consumption$datetime, 
